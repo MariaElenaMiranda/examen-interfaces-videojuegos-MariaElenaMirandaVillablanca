@@ -49,7 +49,6 @@ btnId.addEventListener('click', () => {
     contenedorRespuesta.textContent = '';
     contenedorRespuesta.className = '';
     mensaje.textContent = 'Por favor, ingresa un ID válido';
-    mensaje.className = 'text-warning-emphasis';
     contenedorRespuesta.appendChild(mensaje);
     console.log(mensaje);
   }else {
