@@ -7,7 +7,7 @@ export function getJuego(id) {
 
   const promesa = new Promise((resolve, reject) => {
     setTimeout(() => {
-      const juego = juegos.find(juego => juego.id === Number(id))?.titulo;
+      const juego = juegos.find(juego => juego.id === Number(id));
       if(juego) {
         resolve(juego);
       }else {

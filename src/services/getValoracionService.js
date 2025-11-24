@@ -7,7 +7,7 @@ export function getValoracion(id) {
 
   const promesa = new Promise((resolve, reject) => {
     setTimeout(() => {
-      const puntuacion = valoraciones.find(valoracion => valoracion.id === Number(id))?.puntuacion;
+      const puntuacion = valoraciones.find(valoracion => valoracion.id === Number(id));
       if(puntuacion) {
         resolve(puntuacion);
       }else {
