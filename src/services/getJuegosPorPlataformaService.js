@@ -7,7 +7,7 @@ export function getJuegosPorPlataforma(categoria) {
 
   const promesa = new Promise((resolve, reject) => {
     setTimeout(() => {
-      const listadoJuegos = juegos.filter(juego => juego.categoria === categoria);
+      const listadoJuegos = juegos.filter(juego => juego.plataforma === categoria);
       if(listadoJuegos) {
         resolve(listadoJuegos);
       }
